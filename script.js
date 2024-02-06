@@ -13,3 +13,9 @@ function clearText() {
     var display = document.getElementById('display');
     display.innerText = "";
 }
+
+function backspace() {
+    var display = document.getElementById('display');
+    text = display.innerText
+    display.innerText = text.substring(0,text.length-1)
+}

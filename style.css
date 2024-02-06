@@ -1,5 +1,10 @@
 .display-container {
     text-align: center;
+    min-height: 100px;
+}
+
+#display {
+    font-size: 50px;
 }
 
 .button-container {
