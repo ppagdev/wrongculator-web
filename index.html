@@ -2,15 +2,26 @@
 
 <html>
   <head>
+    <script src="https://cdnjs.com/libraries/mathjs"> </script>
     <title>Wrongculator Web</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <h1>Hello World!</h1>
+    <p id="display"></p>
 
     <div class="button-container">
-      <button>1</button>
+      <button type="button" value="0" onclick="appendToDisplay(this)">0</button>
+      <button type="button" value="1" onclick="appendToDisplay(this)">1</button>
+      <button type="button" value="2" onclick="appendToDisplay(this)">2</button>
+      <button type="button" value="3" onclick="appendToDisplay(this)">3</button>
+      <button type="button" value="4" onclick="appendToDisplay(this)">4</button>
+      <button type="button" value="5" onclick="appendToDisplay(this)">5</button>
+      <button type="button" value="6" onclick="appendToDisplay(this)">6</button>
+      <button type="button" value="7" onclick="appendToDisplay(this)">7</button>
+      <button type="button" value="8" onclick="appendToDisplay(this)">8</button>
+      <button type="button" value="9" onclick="appendToDisplay(this)">9</button>
     </div>
-
+    <script src="script.js"> </script>
   </body>
 </html>
