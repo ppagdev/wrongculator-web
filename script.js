@@ -1,6 +1,9 @@
 function appendToDisplay(arg) {
+    var char_limit = 12;
     var display = document.getElementById('display');
-    display.innerText += arg.value;
+    if (display.innerText.length < char_limit) {
+        display.innerText += arg.value;
+    }
 }
 
 function equals() {
