@@ -1,3 +1,5 @@
+var coward = false;
+
 function appendToDisplay(arg) {
     var char_limit = 12;
     var display = document.getElementById('display');
@@ -6,9 +8,38 @@ function appendToDisplay(arg) {
     }
 }
 
+function toggleCoward(button) {
+    coward = !coward;
+    if (coward) {
+        button.innerText = "Coward";
+    }
+    else {
+        button.innerText = "Normal";
+    }
+}
+
+function randomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function wrongculate(expression) {
+    if (coward) {
+        return expression;
+    }
+    if (randomInt(1,3) != 1) {
+        return expression;
+    }
+    number = randomInt(-5, 5);
+    expression += "+ " + number;
+    return expression;
+}
+
 function equals() {
     var display = document.getElementById('display');
-    var result = math.evaluate(display.innerText);
+    var expression = wrongculate(display.innerText);
+    var result = math.evaluate(expression);
     display.innerText = result.toString();
 }
 

@@ -11,6 +11,11 @@ body {
     background-size: cover;
 }
 
+.coward-mode-container {
+    width: 20%;
+    float: right;
+}
+
 .display-container-outer {
     background-color: var(--main-color);
     width: 40%;
